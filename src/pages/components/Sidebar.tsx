@@ -1,11 +1,19 @@
 import Link from "next/link";
 import HomeIcon from "./icns/homeicon";
 import DiscordIcon from "./icns/discord";
-
+import SearchIcon from "./icns/searchicon";
+import BugIcon from "./icns/bugicon";
+import GithubIcon from "./icns/ghicon";
 function Sidebar() {
     return (
-        <div className="hidden p-6 lg:flex fixed top-0 left-0 h-screen bg-[#1e1922] border-r-2 border-[#0b090c] w-64">
+        <div className="hidden p-4 lg:flex fixed top-0 left-0 h-screen bg-[#1e1922] border-r-2 border-[#0b090c] w-auto">
             <div className="flex flex-col">
+                <form action="" className="pb-4 flex items-center space-x-1">
+                    <input type="text" className="placeholder:text-white/50 rounded-full p-2 bg-[#0e0a11]" placeholder="Search.." />
+                    <button className="p-2 bg-[#fff] rounded-full">
+                        <SearchIcon />
+                    </button>
+                </form>
                 <Link href="#" className="flex space-x-2 py-2 items-center">
                     <div>
                         <HomeIcon />
@@ -17,6 +25,18 @@ function Sidebar() {
                         <DiscordIcon />
                     </div>
                     <b>Discord Community</b>
+                </Link>
+                <Link href="https://github.com/Rinechxn/songdb/issues" target="_blank" className="flex space-x-2 py-2 items-center">
+                    <div className="w-6 h-6 fill-white">
+                        <BugIcon />
+                    </div>
+                    <b>Bug Report</b>
+                </Link>
+                <Link href="https://github.com/Rinechxn/songdb" target="_blank" className="flex space-x-2 py-2 items-center">
+                    <div className="w-6 h-6 fill-white">
+                        <GithubIcon />
+                    </div>
+                    <b>View on GitHub</b>
                 </Link>
             </div>
         </div>

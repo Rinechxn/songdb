@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Nav />
       <div className="flex">
         <Sidebar />
-        <div className="lg:pl-64 min-h-screen flex-1  overflow-x-auto"> {/* Adjust `ml-64` based on the sidebar's width */}
+        <div className="lg:pl-[318px] min-h-screen flex-1  overflow-x-auto"> {/* Adjust `ml-64` based on the sidebar's width */}
           <Component {...pageProps} />
         </div>
       </div>

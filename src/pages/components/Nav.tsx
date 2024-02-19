@@ -1,6 +1,7 @@
 import Link from "next/link";
 import DiscordIcon from "./icns/discord";
-
+import BugIcon from "./icns/bugicon";
+import GithubIcon from "./icns/ghicon";
 
 function Nav() {
     return (
@@ -17,6 +18,16 @@ function Nav() {
                             <DiscordIcon />
                         </div>
                     </Link>
+                    <Link href="https://github.com/Rinechxn/songdb/issues" target="_blank" className="flex space-x-2 py-2 items-center">
+                        <div className="w-6 h-6 fill-white">
+                            <BugIcon />
+                        </div>
+                    </Link>
+                    <Link href="https://github.com/Rinechxn/songdb" target="_blank" className="flex space-x-2 py-2 items-center">
+                    <div className="w-6 h-6 fill-white">
+                        <GithubIcon />
+                    </div>
+                </Link>
                 </div>
             </nav>
         </>
