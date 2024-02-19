@@ -1,0 +1,997 @@
+{
+    "message": "success",
+    "data": [
+        {
+            "id": 1,
+            "file_name": "[06] FINAL-LALISA รถแห่.wav",
+            "file_path": "./Audio/wav_formats/UltimateKPOP_HQ/[06] FINAL-LALISA รถแห่.wav",
+            "format": "WAV",
+            "size": "99184438",
+            "duration": "0:05:41"
+        },
+        {
+            "id": 2,
+            "file_name": "[03] Not Shy - ITZY (NEIX ft. TOEY GUITAR).wav",
+            "file_path": "./Audio/wav_formats/UltimateKPOP_HQ/[03] Not Shy - ITZY (NEIX ft. TOEY GUITAR).wav",
+            "format": "WAV",
+            "size": "87637372",
+            "duration": "0:05:01"
+        },
+        {
+            "id": 3,
+            "file_name": "[05] Boy with Luv - BTS (NEiX).wav",
+            "file_path": "./Audio/wav_formats/UltimateKPOP_HQ/[05] Boy with Luv - BTS (NEiX).wav",
+            "format": "WAV",
+            "size": "63264754",
+            "duration": "0:03:56"
+        },
+        {
+            "id": 4,
+            "file_name": "[04] BLACKPINK - DDU-DU-DDU-DU COVER [NEIXREMiX].wav",
+            "file_path": "./Audio/wav_formats/UltimateKPOP_HQ/[04] BLACKPINK - DDU-DU-DDU-DU COVER [NEIXREMiX].wav",
+            "format": "WAV",
+            "size": "55430848",
+            "duration": "0:03:26"
+        },
+        {
+            "id": 5,
+            "file_name": "[02] Ice Scream - Blackpink (NEiX ft. TAWAN + JLK).wav",
+            "file_path": "./Audio/wav_formats/UltimateKPOP_HQ/[02] Ice Scream - Blackpink (NEiX ft. TAWAN + JLK).wav",
+            "format": "WAV",
+            "size": "109279318",
+            "duration": "0:06:16"
+        },
+        {
+            "id": 6,
+            "file_name": "[01] รถด่วนขบวนสุดท้าย = YoungOhm (NEiXREMiX).wav",
+            "file_path": "./Audio/wav_formats/UltimateRapper_HQ/[01] รถด่วนขบวนสุดท้าย = YoungOhm (NEiXREMiX).wav",
+            "format": "WAV",
+            "size": "73102628",
+            "duration": "0:03:24"
+        },
+        {
+            "id": 7,
+            "file_name": "[03] ธารารัตน์! - YOUNGOHM (NEiX) v2.wav",
+            "file_path": "./Audio/wav_formats/UltimateRapper_HQ/[03] ธารารัตน์! - YOUNGOHM (NEiX) v2.wav",
+            "format": "WAV",
+            "size": "73424076",
+            "duration": "0:03:25"
+        },
+        {
+            "id": 8,
+            "file_name": "[02] ธารารัตน์! - YOUNGOHM (NEiX) v1.wav",
+            "file_path": "./Audio/wav_formats/UltimateRapper_HQ/[02] ธารารัตน์! - YOUNGOHM (NEiX) v1.wav",
+            "format": "WAV",
+            "size": "84254852",
+            "duration": "0:03:56"
+        },
+        {
+            "id": 9,
+            "file_name": "เขียวกุด-ลูกทุ่ง.wav",
+            "file_path": "./Audio/wav_formats/ToothLess_HQ/เขียวกุด-ลูกทุ่ง.wav",
+            "format": "WAV",
+            "size": "62122778",
+            "duration": "0:02:41"
+        },
+        {
+            "id": 10,
+            "file_name": "เขียวกุ้ดแดนซ์-MASTER.wav",
+            "file_path": "./Audio/wav_formats/ToothLess_HQ/เขียวกุ้ดแดนซ์-MASTER.wav",
+            "format": "WAV",
+            "size": "65620368",
+            "duration": "0:03:47"
+        },
+        {
+            "id": 11,
+            "file_name": "[01] SenbonZakura.wav",
+            "file_path": "./Audio/wav_formats/VocaloidRodhare_HQ/[01] SenbonZakura.wav",
+            "format": "WAV",
+            "size": "47576218",
+            "duration": "0:04:07"
+        },
+        {
+            "id": 12,
+            "file_name": "[02] DECO27 - Volt Tackle (Rodhare).wav",
+            "file_path": "./Audio/wav_formats/VocaloidRodhare_HQ/[02] DECO27 - Volt Tackle (Rodhare).wav",
+            "format": "WAV",
+            "size": "52631876",
+            "duration": "0:03:02"
+        },
+        {
+            "id": 13,
+            "file_name": "[05] NEiX x MAXC4 - New Melody (v.2019).wav",
+            "file_path": "./Audio/wav_formats/ThaiMusicFusion_HQ/[05] NEiX x MAXC4 - New Melody (v.2019).wav",
+            "format": "WAV",
+            "size": "57048300",
+            "duration": "0:03:32"
+        },
+        {
+            "id": 14,
+            "file_name": "[01] Thaidumlumpan - ThaiTrap (NEiX).wav",
+            "file_path": "./Audio/wav_formats/ThaiMusicFusion_HQ/[01] Thaidumlumpan - ThaiTrap (NEiX).wav",
+            "format": "WAV",
+            "size": "187836332",
+            "duration": "0:05:24"
+        },
+        {
+            "id": 15,
+            "file_name": "[03] New Melody 2019 - NEIX (Spacial).wav",
+            "file_path": "./Audio/wav_formats/ThaiMusicFusion_HQ/[03] New Melody 2019 - NEIX (Spacial).wav",
+            "format": "WAV",
+            "size": "119296798",
+            "duration": "0:03:25"
+        },
+        {
+            "id": 16,
+            "file_name": "[04] TrapESanonThebeat #5 (NEiX).wav",
+            "file_path": "./Audio/wav_formats/ThaiMusicFusion_HQ/[04] TrapESanonThebeat #5 (NEiX).wav",
+            "format": "WAV",
+            "size": "102720496",
+            "duration": "0:05:53"
+        },
+        {
+            "id": 17,
+            "file_name": "[06] NEiX ft. บ่าวเบสท์ - พิณซิ่ง E.P.11.wav",
+            "file_path": "./Audio/wav_formats/ThaiMusicFusion_HQ/[06] NEiX ft. บ่าวเบสท์ - พิณซิ่ง E.P.11.wav",
+            "format": "WAV",
+            "size": "93371832",
+            "duration": "0:04:22"
+        },
+        {
+            "id": 18,
+            "file_name": "[08] New Melody - NEIX x TAEXS (v.2020 Release).wav",
+            "file_path": "./Audio/wav_formats/ThaiMusicFusion_HQ/[08] New Melody - NEIX x TAEXS (v.2020 Release).wav",
+            "format": "WAV",
+            "size": "80221350",
+            "duration": "0:05:00"
+        },
+        {
+            "id": 19,
+            "file_name": "[02] TrapESanonThebeat #6 (NEiX).wav",
+            "file_path": "./Audio/wav_formats/ThaiMusicFusion_HQ/[02] TrapESanonThebeat #6 (NEiX).wav",
+            "format": "WAV",
+            "size": "175071466",
+            "duration": "0:05:02"
+        },
+        {
+            "id": 20,
+            "file_name": "[09] E-SAN Flow Fusion - NEIX x TAEXS.wav",
+            "file_path": "./Audio/wav_formats/ThaiMusicFusion_HQ/[09] E-SAN Flow Fusion - NEIX x TAEXS.wav",
+            "format": "WAV",
+            "size": "112324562",
+            "duration": "0:06:26"
+        },
+        {
+            "id": 21,
+            "file_name": "[26] Mini Nonstop - ต้อนรับปีใหม่ 2019 Vol.2 [NEiXREMiX] 1.wav",
+            "file_path": "./Audio/wav_formats/UltimateRemix_HQ/[26] Mini Nonstop - ต้อนรับปีใหม่ 2019 Vol.2 [NEiXREMiX] 1.wav",
+            "format": "WAV",
+            "size": "465837760",
+            "duration": "0:29:17"
+        },
+        {
+            "id": 22,
+            "file_name": "[14] Krewella - Calm Down (NEiX Remix).wav",
+            "file_path": "./Audio/wav_formats/UltimateRemix_HQ/[14] Krewella - Calm Down (NEiX Remix).wav",
+            "format": "WAV",
+            "size": "49659328",
+            "duration": "0:03:04"
+        },
+        {
+            "id": 23,
+            "file_name": "[10] NEiX - ยกล้อแสดงสด e.p.01.wav",
+            "file_path": "./Audio/wav_formats/UltimateRemix_HQ/[10] NEiX - ยกล้อแสดงสด e.p.01.wav",
+            "format": "WAV",
+            "size": "41806648",
+            "duration": "0:02:34"
+        },
+        {
+            "id": 24,
+            "file_name": "[08] NEIX 3CHA NONSTOP #1.wav",
+            "file_path": "./Audio/wav_formats/UltimateRemix_HQ/[08] NEIX 3CHA NONSTOP #1.wav",
+            "format": "WAV",
+            "size": "227740096",
+            "duration": "0:14:17"
+        },
+        {
+            "id": 25,
+            "file_name": "[07] NEIX ELECTONE NONSTOP #1.wav",
+            "file_path": "./Audio/wav_formats/UltimateRemix_HQ/[07] NEIX ELECTONE NONSTOP #1.wav",
+            "format": "WAV",
+            "size": "252028864",
+            "duration": "0:15:49"
+        },
+        {
+            "id": 26,
+            "file_name": "[02] Nonstop หมอลำ v.1 - NEiXREMiX.wav",
+            "file_path": "./Audio/wav_formats/UltimateRemix_HQ/[02] Nonstop หมอลำ v.1 - NEiXREMiX.wav",
+            "format": "WAV",
+            "size": "172268866",
+            "duration": "0:10:48"
+        },
+        {
+            "id": 27,
+            "file_name": "[03] วันนาวัน! - NEiX.wav",
+            "file_path": "./Audio/wav_formats/UltimateRemix_HQ/[03] วันนาวัน! - NEiX.wav",
+            "format": "WAV",
+            "size": "92420180",
+            "duration": "0:04:19"
+        },
+        {
+            "id": 28,
+            "file_name": "[18] สะบัดต่อไม่รอแล้วนะ - NEiXREMiX.wav",
+            "file_path": "./Audio/wav_formats/UltimateRemix_HQ/[18] สะบัดต่อไม่รอแล้วนะ - NEiXREMiX.wav",
+            "format": "WAV",
+            "size": "59108076",
+            "duration": "0:03:40"
+        },
+        {
+            "id": 29,
+            "file_name": "[17] Nonstop สงกรานต์ v2 [NEiX].wav",
+            "file_path": "./Audio/wav_formats/UltimateRemix_HQ/[17] Nonstop สงกรานต์ v2 [NEiX].wav",
+            "format": "WAV",
+            "size": "1021617900",
+            "duration": "1:04:17"
+        },
+        {
+            "id": 30,
+            "file_name": "[09] NEiX - ยกล้อแสดงสด e.p.01.wav",
+            "file_path": "./Audio/wav_formats/UltimateRemix_HQ/[09] NEiX - ยกล้อแสดงสด e.p.01.wav",
+            "format": "WAV",
+            "size": "39983284",
+            "duration": "0:02:28"
+        },
+        {
+            "id": 31,
+            "file_name": "[20] NEIX NONSTOP.wav",
+            "file_path": "./Audio/wav_formats/UltimateRemix_HQ/[20] NEIX NONSTOP.wav",
+            "format": "WAV",
+            "size": "628210588",
+            "duration": "0:29:38"
+        },
+        {
+            "id": 32,
+            "file_name": "[06] NEiX NONSTOP HIPHOP V1.wav",
+            "file_path": "./Audio/wav_formats/UltimateRemix_HQ/[06] NEiX NONSTOP HIPHOP V1.wav",
+            "format": "WAV",
+            "size": "254766016",
+            "duration": "0:15:59"
+        },
+        {
+            "id": 33,
+            "file_name": "[25] อิเตโล - NEiX.wav",
+            "file_path": "./Audio/wav_formats/UltimateRemix_HQ/[25] อิเตโล - NEiX.wav",
+            "format": "WAV",
+            "size": "47374956",
+            "duration": "0:02:56"
+        },
+        {
+            "id": 34,
+            "file_name": "[05] Mini Nonstop - ต้อนรับปีใหม่ 2019 Vol.2 [NEiXREMiX] .wav",
+            "file_path": "./Audio/wav_formats/UltimateRemix_HQ/[05] Mini Nonstop - ต้อนรับปีใหม่ 2019 Vol.2 [NEiXREMiX] .wav",
+            "format": "WAV",
+            "size": "465837760",
+            "duration": "0:29:17"
+        },
+        {
+            "id": 35,
+            "file_name": "[16] NONSTOP136 V2 - NEiX.wav",
+            "file_path": "./Audio/wav_formats/UltimateRemix_HQ/[16] NONSTOP136 V2 - NEiX.wav",
+            "format": "WAV",
+            "size": "1015238124",
+            "duration": "1:03:53"
+        },
+        {
+            "id": 36,
+            "file_name": "[19] NEiX - ยกล้อแสดงสด e.p.02.wav",
+            "file_path": "./Audio/wav_formats/UltimateRemix_HQ/[19] NEiX - ยกล้อแสดงสด e.p.02.wav",
+            "format": "WAV",
+            "size": "48235116",
+            "duration": "0:02:59"
+        },
+        {
+            "id": 37,
+            "file_name": "[21] #กำลังฮิต Tiktok - เหมียวๆ [NEiXREMiX].wav",
+            "file_path": "./Audio/wav_formats/UltimateRemix_HQ/[21] #กำลังฮิต Tiktok - เหมียวๆ [NEiXREMiX].wav",
+            "format": "WAV",
+            "size": "73988564",
+            "duration": "0:03:27"
+        },
+        {
+            "id": 38,
+            "file_name": "[04] (คัดมาแล้ว) เพลงแดนซ์แตรวงอีสานสามช่ามันส์ๆ E.P.01 - NEiX x NONREMiX x MOKUL.wav",
+            "file_path": "./Audio/wav_formats/UltimateRemix_HQ/[04] (คัดมาแล้ว) เพลงแดนซ์แตรวงอีสานสามช่ามันส์ๆ E.P.01 - NEiX x NONREMiX x MOKUL.wav",
+            "format": "WAV",
+            "size": "484092352",
+            "duration": "0:30:26"
+        },
+        {
+            "id": 39,
+            "file_name": "[24] ELECTONE 158 - NEiXREMiX.wav",
+            "file_path": "./Audio/wav_formats/UltimateRemix_HQ/[24] ELECTONE 158 - NEiXREMiX.wav",
+            "format": "WAV",
+            "size": "112940070",
+            "duration": "0:07:03"
+        },
+        {
+            "id": 40,
+            "file_name": "[13] Krewella - Calm Down (NEiX Remix).wav",
+            "file_path": "./Audio/wav_formats/UltimateRemix_HQ/[13] Krewella - Calm Down (NEiX Remix).wav",
+            "format": "WAV",
+            "size": "52513984",
+            "duration": "0:03:15"
+        },
+        {
+            "id": 41,
+            "file_name": "[12] Alone E-SAN - NEiX ft JON REMIX.wav",
+            "file_path": "./Audio/wav_formats/UltimateRemix_HQ/[12] Alone E-SAN - NEiX ft JON REMIX.wav",
+            "format": "WAV",
+            "size": "53737408",
+            "duration": "0:03:20"
+        },
+        {
+            "id": 42,
+            "file_name": "[23] งัดถั่งงัด - NEiXREMiX.wav",
+            "file_path": "./Audio/wav_formats/UltimateRemix_HQ/[23] งัดถั่งงัด - NEiXREMiX.wav",
+            "format": "WAV",
+            "size": "63859104",
+            "duration": "0:03:58"
+        },
+        {
+            "id": 43,
+            "file_name": "[27] Nonstop Mini NEiX.wav",
+            "file_path": "./Audio/wav_formats/UltimateRemix_HQ/[27] Nonstop Mini NEiX.wav",
+            "format": "WAV",
+            "size": "407645632",
+            "duration": "0:25:37"
+        },
+        {
+            "id": 44,
+            "file_name": "[15] NONSTOP136 - NEiX.wav",
+            "file_path": "./Audio/wav_formats/UltimateRemix_HQ/[15] NONSTOP136 - NEiX.wav",
+            "format": "WAV",
+            "size": "394292516",
+            "duration": "0:18:35"
+        },
+        {
+            "id": 45,
+            "file_name": "[01] NEiX - 3CHA Electric Remixset v.2021.wav",
+            "file_path": "./Audio/wav_formats/UltimateRemix_HQ/[01] NEiX - 3CHA Electric Remixset v.2021.wav",
+            "format": "WAV",
+            "size": "555690172",
+            "duration": "0:16:03"
+        },
+        {
+            "id": 46,
+            "file_name": "[11] Morlum Nonstop - NEiX x XTREAMX x POY.wav",
+            "file_path": "./Audio/wav_formats/UltimateRemix_HQ/[11] Morlum Nonstop - NEiX x XTREAMX x POY.wav",
+            "format": "WAV",
+            "size": "143351488",
+            "duration": "0:08:58"
+        },
+        {
+            "id": 47,
+            "file_name": "[08] 【Evangelion หมอลำ】A Cruel Angel's Thesis Ver. รถแห่ 【NEiXREMiX】.wav",
+            "file_path": "./Audio/wav_formats/UltimateAnimeRemix_HQ/[08] 【Evangelion หมอลำ】A Cruel Angel's Thesis Ver. รถแห่ 【NEiXREMiX】.wav",
+            "format": "WAV",
+            "size": "46181874",
+            "duration": "0:04:00"
+        },
+        {
+            "id": 48,
+            "file_name": "[01] Gurenge (Yaiba) - Rodhare Remix (NEiX ft. TAWAN).wav",
+            "file_path": "./Audio/wav_formats/UltimateAnimeRemix_HQ/[01] Gurenge (Yaiba) - Rodhare Remix (NEiX ft. TAWAN).wav",
+            "format": "WAV",
+            "size": "234770468",
+            "duration": "0:06:46"
+        },
+        {
+            "id": 49,
+            "file_name": "[05] Let it GO REMiX E-SAN.wav",
+            "file_path": "./Audio/wav_formats/UltimateAnimeRemix_HQ/[05] Let it GO REMiX E-SAN.wav",
+            "format": "WAV",
+            "size": "61105644",
+            "duration": "0:03:47"
+        },
+        {
+            "id": 50,
+            "file_name": "[04] KONAN THEME REMiX - NEiX x FIW.wav",
+            "file_path": "./Audio/wav_formats/UltimateAnimeRemix_HQ/[04] KONAN THEME REMiX - NEiX x FIW.wav",
+            "format": "WAV",
+            "size": "53526956",
+            "duration": "0:02:29"
+        },
+        {
+            "id": 51,
+            "file_name": "[02] Jujutsu Kaisen - Kaikai Kitan (NEIX).wav",
+            "file_path": "./Audio/wav_formats/UltimateAnimeRemix_HQ/[02] Jujutsu Kaisen - Kaikai Kitan (NEIX).wav",
+            "format": "WAV",
+            "size": "84901304",
+            "duration": "0:04:52"
+        },
+        {
+            "id": 52,
+            "file_name": "[06] Attack of Titan (v.Rodhare by NailordX).wav",
+            "file_path": "./Audio/wav_formats/UltimateAnimeRemix_HQ/[06] Attack of Titan (v.Rodhare by NailordX).wav",
+            "format": "WAV",
+            "size": "39903220",
+            "duration": "0:01:41"
+        },
+        {
+            "id": 53,
+            "file_name": "[07] Loli God Requiem-MASTER.wav",
+            "file_path": "./Audio/wav_formats/UltimateAnimeRemix_HQ/[07] Loli God Requiem-MASTER.wav",
+            "format": "WAV",
+            "size": "83781998",
+            "duration": "0:04:50"
+        },
+        {
+            "id": 54,
+            "file_name": "[03] อิคคิวซัง - NEiX x POY.wav",
+            "file_path": "./Audio/wav_formats/UltimateAnimeRemix_HQ/[03] อิคคิวซัง - NEiX x POY.wav",
+            "format": "WAV",
+            "size": "68902144",
+            "duration": "0:03:56"
+        },
+        {
+            "id": 55,
+            "file_name": "[02] Bad Apple - NEiXREMiX.wav",
+            "file_path": "./Audio/wav_formats/TouhouRemix_HQ/[02] Bad Apple - NEiXREMiX.wav",
+            "format": "WAV",
+            "size": "174620368",
+            "duration": "0:07:32"
+        },
+        {
+            "id": 56,
+            "file_name": "[01] Night of Night (NEiX).wav",
+            "file_path": "./Audio/wav_formats/TouhouRemix_HQ/[01] Night of Night (NEiX).wav",
+            "format": "WAV",
+            "size": "81906172",
+            "duration": "0:03:31"
+        },
+        {
+            "id": 57,
+            "file_name": "[03] We Are Japanese Goblin เวอร์ชั่นรถแห่ 4x100! - NEiX ft. TAEXS-HSCB.wav",
+            "file_path": "./Audio/wav_formats/TouhouRemix_HQ/[03] We Are Japanese Goblin เวอร์ชั่นรถแห่ 4x100! - NEiX ft. TAEXS-HSCB.wav",
+            "format": "WAV",
+            "size": "85670840",
+            "duration": "0:04:54"
+        },
+        {
+            "id": 58,
+            "file_name": "ADO-RODHARE-FINAL3.wav",
+            "file_path": "./Audio/wav_formats/Ado_Rodhare_HQ/ADO-RODHARE-FINAL3.wav",
+            "format": "WAV",
+            "size": "71496732",
+            "duration": "0:04:08"
+        },
+        {
+            "id": 59,
+            "file_name": "[03] Blue Archive OST - Constant Moderato (REMIX).wav",
+            "file_path": "./Audio/wav_formats/Blue Archive_REMiX_HQ/[03] Blue Archive OST - Constant Moderato (REMIX).wav",
+            "format": "WAV",
+            "size": "41710526",
+            "duration": "0:02:24"
+        },
+        {
+            "id": 60,
+            "file_name": "[02] Raise the Huddle.wav",
+            "file_path": "./Audio/wav_formats/Blue Archive_REMiX_HQ/[02] Raise the Huddle.wav",
+            "format": "WAV",
+            "size": "29952114",
+            "duration": "0:02:36"
+        },
+        {
+            "id": 61,
+            "file_name": "[01] MidSummer Cat.wav",
+            "file_path": "./Audio/wav_formats/Blue Archive_REMiX_HQ/[01] MidSummer Cat.wav",
+            "format": "WAV",
+            "size": "42163314",
+            "duration": "0:02:26"
+        },
+        {
+            "id": 62,
+            "file_name": "Loli God Requiem-MASTER.wav",
+            "file_path": "./Audio/wav_formats/J-POP_Rodhare_HQ/Loli God Requiem-MASTER.wav",
+            "format": "WAV",
+            "size": "83781998",
+            "duration": "0:04:50"
+        },
+        {
+            "id": 63,
+            "file_name": "[08] Saithung.wav",
+            "file_path": "./Audio/wav_formats/RodhareUltimate_HQ/[08] Saithung.wav",
+            "format": "WAV",
+            "size": "69234104",
+            "duration": "0:03:57"
+        },
+        {
+            "id": 64,
+            "file_name": "[50] มหากาพย์รถแห่ (เวอร์ชั่นเล่นไม่สนสคริปต์) 1-2.wav",
+            "file_path": "./Audio/wav_formats/RodhareUltimate_HQ/[50] มหากาพย์รถแห่ (เวอร์ชั่นเล่นไม่สนสคริปต์) 1-2.wav",
+            "format": "WAV",
+            "size": "1263594028",
+            "duration": "1:13:04"
+        },
+        {
+            "id": 65,
+            "file_name": "[33] Zeed - NEiXREMiX.wav",
+            "file_path": "./Audio/wav_formats/RodhareUltimate_HQ/[33] Zeed - NEiXREMiX.wav",
+            "format": "WAV",
+            "size": "37358142",
+            "duration": "0:02:18"
+        },
+        {
+            "id": 66,
+            "file_name": "[04] มหากาพย์ Mini - NEiX.wav",
+            "file_path": "./Audio/wav_formats/RodhareUltimate_HQ/[04] มหากาพย์ Mini - NEiX.wav",
+            "format": "WAV",
+            "size": "109969780",
+            "duration": "0:06:19"
+        },
+        {
+            "id": 67,
+            "file_name": "[01] Buaphan Thangso Opening Band - NEiX (Cover).wav",
+            "file_path": "./Audio/wav_formats/RodhareUltimate_HQ/[01] Buaphan Thangso Opening Band - NEiX (Cover).wav",
+            "format": "WAV",
+            "size": "175909282",
+            "duration": "0:05:04"
+        },
+        {
+            "id": 68,
+            "file_name": "[31] มูมัดช่าแสดงสด NEiX.wav",
+            "file_path": "./Audio/wav_formats/RodhareUltimate_HQ/[31] มูมัดช่าแสดงสด NEiX.wav",
+            "format": "WAV",
+            "size": "50954786",
+            "duration": "0:03:09"
+        },
+        {
+            "id": 69,
+            "file_name": "[06] Final Countdown - NEIX.wav",
+            "file_path": "./Audio/wav_formats/RodhareUltimate_HQ/[06] Final Countdown - NEIX.wav",
+            "format": "WAV",
+            "size": "90830618",
+            "duration": "0:05:12"
+        },
+        {
+            "id": 70,
+            "file_name": "[29] สาเนาะอ้าย cover.wav",
+            "file_path": "./Audio/wav_formats/RodhareUltimate_HQ/[29] สาเนาะอ้าย cover.wav",
+            "format": "WAV",
+            "size": "61285356",
+            "duration": "0:03:48"
+        },
+        {
+            "id": 71,
+            "file_name": "[02] Ton - Junenom (Cover Version - NEiX).wav",
+            "file_path": "./Audio/wav_formats/RodhareUltimate_HQ/[02] Ton - Junenom (Cover Version - NEiX).wav",
+            "format": "WAV",
+            "size": "68197372",
+            "duration": "0:03:54"
+        },
+        {
+            "id": 72,
+            "file_name": "[39] BNK Festival - NEiX x TAWAN.wav",
+            "file_path": "./Audio/wav_formats/RodhareUltimate_HQ/[39] BNK Festival - NEiX x TAWAN.wav",
+            "format": "WAV",
+            "size": "103118796",
+            "duration": "0:04:50"
+        },
+        {
+            "id": 73,
+            "file_name": "[34] UBON SAYAN OPENING - NEiX (Cover).wav",
+            "file_path": "./Audio/wav_formats/RodhareUltimate_HQ/[34] UBON SAYAN OPENING - NEiX (Cover).wav",
+            "format": "WAV",
+            "size": "115890156",
+            "duration": "0:07:14"
+        },
+        {
+            "id": 74,
+            "file_name": "[49] RHMF FULL.wav",
+            "file_path": "./Audio/wav_formats/RodhareUltimate_HQ/[49] RHMF FULL.wav",
+            "format": "WAV",
+            "size": "1233408712",
+            "duration": "1:11:19"
+        },
+        {
+            "id": 75,
+            "file_name": "[43] ลำซิ่ง v1 - NEiX.wav",
+            "file_path": "./Audio/wav_formats/RodhareUltimate_HQ/[43] ลำซิ่ง v1 - NEiX.wav",
+            "format": "WAV",
+            "size": "164645682",
+            "duration": "0:10:19"
+        },
+        {
+            "id": 76,
+            "file_name": "[05] BAD ROMANCE - NEIX ft BOOK.wav",
+            "file_path": "./Audio/wav_formats/RodhareUltimate_HQ/[05] BAD ROMANCE - NEIX ft BOOK.wav",
+            "format": "WAV",
+            "size": "72085304",
+            "duration": "0:04:07"
+        },
+        {
+            "id": 77,
+            "file_name": "[35] ลายแห่หย่าวๆ - NEiX.wav",
+            "file_path": "./Audio/wav_formats/RodhareUltimate_HQ/[35] ลายแห่หย่าวๆ - NEiX.wav",
+            "format": "WAV",
+            "size": "79541752",
+            "duration": "0:04:57"
+        },
+        {
+            "id": 78,
+            "file_name": "[44] แห่หย่าวๆ - NEIX x POY.wav",
+            "file_path": "./Audio/wav_formats/RodhareUltimate_HQ/[44] แห่หย่าวๆ - NEIX x POY.wav",
+            "format": "WAV",
+            "size": "340816336",
+            "duration": "0:16:03"
+        },
+        {
+            "id": 79,
+            "file_name": "[51] มหากาพย์รถแห่ (ย้อนยุค).wav",
+            "file_path": "./Audio/wav_formats/RodhareUltimate_HQ/[51] มหากาพย์รถแห่ (ย้อนยุค).wav",
+            "format": "WAV",
+            "size": "90262772",
+            "duration": "0:05:13"
+        },
+        {
+            "id": 80,
+            "file_name": "[03] กาโว X กำนัมสไตล์ - NEIXREMiX.wav",
+            "file_path": "./Audio/wav_formats/RodhareUltimate_HQ/[03] กาโว X กำนัมสไตล์ - NEIXREMiX.wav",
+            "format": "WAV",
+            "size": "66463760",
+            "duration": "0:03:47"
+        },
+        {
+            "id": 81,
+            "file_name": "[41] มหากาพย์ 2019 #2 - NEiX.wav",
+            "file_path": "./Audio/wav_formats/RodhareUltimate_HQ/[41] มหากาพย์ 2019 #2 - NEiX.wav",
+            "format": "WAV",
+            "size": "160488812",
+            "duration": "0:07:32"
+        },
+        {
+            "id": 82,
+            "file_name": "[46] ลำซิ่ง v.9 (Mini) MASTER - NEiXREMIX.wav",
+            "file_path": "./Audio/wav_formats/RodhareUltimate_HQ/[46] ลำซิ่ง v.9 (Mini) MASTER - NEiXREMIX.wav",
+            "format": "WAV",
+            "size": "122313772",
+            "duration": "0:05:44"
+        },
+        {
+            "id": 83,
+            "file_name": "[07] NANANA - NEiX.wav",
+            "file_path": "./Audio/wav_formats/RodhareUltimate_HQ/[07] NANANA - NEiX.wav",
+            "format": "WAV",
+            "size": "65328832",
+            "duration": "0:03:44"
+        },
+        {
+            "id": 84,
+            "file_name": "[37] #หมอลำ บ่พอตาย - ออยเลอร์  หมอลำอินดี้รีมิกซ์ [NEIX x บ่าวเบสท์].wav",
+            "file_path": "./Audio/wav_formats/RodhareUltimate_HQ/[37] #หมอลำ บ่พอตาย - ออยเลอร์  หมอลำอินดี้รีมิกซ์ [NEIX x บ่าวเบสท์].wav",
+            "format": "WAV",
+            "size": "56039148",
+            "duration": "0:03:28"
+        },
+        {
+            "id": 85,
+            "file_name": "[40] แสดงสด 2019 v14 - NMBTN.wav",
+            "file_path": "./Audio/wav_formats/RodhareUltimate_HQ/[40] แสดงสด 2019 v14 - NMBTN.wav",
+            "format": "WAV",
+            "size": "967738266",
+            "duration": "1:00:54"
+        },
+        {
+            "id": 86,
+            "file_name": "[48] RHMF Part2.wav",
+            "file_path": "./Audio/wav_formats/RodhareUltimate_HQ/[48] RHMF Part2.wav",
+            "format": "WAV",
+            "size": "198377920",
+            "duration": "0:11:26"
+        },
+        {
+            "id": 87,
+            "file_name": "[42] มหากาพย์ 2019 #3 - NEiX.wav",
+            "file_path": "./Audio/wav_formats/RodhareUltimate_HQ/[42] มหากาพย์ 2019 #3 - NEiX.wav",
+            "format": "WAV",
+            "size": "994952004",
+            "duration": "0:46:57"
+        },
+        {
+            "id": 88,
+            "file_name": "[45] แสดงสด ลำซิ่ง 2019 - NEIX.wav",
+            "file_path": "./Audio/wav_formats/RodhareUltimate_HQ/[45] แสดงสด ลำซิ่ง 2019 - NEIX.wav",
+            "format": "WAV",
+            "size": "190174942",
+            "duration": "0:11:55"
+        },
+        {
+            "id": 89,
+            "file_name": "[38] NEiX x PUM - Baila v.เกรียน!!!3.wav",
+            "file_path": "./Audio/wav_formats/RodhareUltimate_HQ/[38] NEiX x PUM - Baila v.เกรียน!!!3.wav",
+            "format": "WAV",
+            "size": "54048448",
+            "duration": "0:03:21"
+        },
+        {
+            "id": 90,
+            "file_name": "[36] Kinino BNK - NEiX x TAWAN.wav",
+            "file_path": "./Audio/wav_formats/RodhareUltimate_HQ/[36] Kinino BNK - NEiX x TAWAN.wav",
+            "format": "WAV",
+            "size": "89766428",
+            "duration": "0:04:12"
+        },
+        {
+            "id": 91,
+            "file_name": "[32] YoungDum - NEIX (REMiX).wav",
+            "file_path": "./Audio/wav_formats/RodhareUltimate_HQ/[32] YoungDum - NEIX (REMiX).wav",
+            "format": "WAV",
+            "size": "61589586",
+            "duration": "0:03:49"
+        },
+        {
+            "id": 92,
+            "file_name": "[30] ไอติมแสดงสด.wav",
+            "file_path": "./Audio/wav_formats/RodhareUltimate_HQ/[30] ไอติมแสดงสด.wav",
+            "format": "WAV",
+            "size": "15901164",
+            "duration": "0:00:57"
+        },
+        {
+            "id": 93,
+            "file_name": "[47] RHMF Part 1.wav",
+            "file_path": "./Audio/wav_formats/RodhareUltimate_HQ/[47] RHMF Part 1.wav",
+            "format": "WAV",
+            "size": "192228380",
+            "duration": "0:11:04"
+        },
+        {
+            "id": 94,
+            "file_name": "[03] Nikke - Redash Threadhood (ThaiStyle Version) MASTER.wav",
+            "file_path": "./Audio/wav_formats/UltimateVideoGameRemix_HQ/[03] Nikke - Redash Threadhood (ThaiStyle Version) MASTER.wav",
+            "format": "WAV",
+            "size": "55698824",
+            "duration": "0:03:13"
+        },
+        {
+            "id": 95,
+            "file_name": "[02] FIRE-BIRD (UltimateRodhare).wav",
+            "file_path": "./Audio/wav_formats/UltimateVideoGameRemix_HQ/[02] FIRE-BIRD (UltimateRodhare).wav",
+            "format": "WAV",
+            "size": "216380292",
+            "duration": "0:06:15"
+        },
+        {
+            "id": 96,
+            "file_name": "[01] Blue Archive OST - Constant Moderato (REMIX).wav",
+            "file_path": "./Audio/wav_formats/UltimateVideoGameRemix_HQ/[01] Blue Archive OST - Constant Moderato (REMIX).wav",
+            "format": "WAV",
+            "size": "41710526",
+            "duration": "0:02:24"
+        },
+        {
+            "id": 97,
+            "file_name": "[06] Ayaka Theme (Remix by NEiX).wav",
+            "file_path": "./Audio/wav_formats/GenshinInThailand_HQ/[06] Ayaka Theme (Remix by NEiX).wav",
+            "format": "WAV",
+            "size": "47952406",
+            "duration": "0:02:33"
+        },
+        {
+            "id": 98,
+            "file_name": "[12] NAHIDA (Remix by NEiX).wav",
+            "file_path": "./Audio/wav_formats/GenshinInThailand_HQ/[12] NAHIDA (Remix by NEiX).wav",
+            "format": "WAV",
+            "size": "86370160",
+            "duration": "0:03:35"
+        },
+        {
+            "id": 99,
+            "file_name": "[04] Klee Theme (Remix by NEiX).wav",
+            "file_path": "./Audio/wav_formats/GenshinInThailand_HQ/[04] Klee Theme (Remix by NEiX).wav",
+            "format": "WAV",
+            "size": "31779250",
+            "duration": "0:01:37"
+        },
+        {
+            "id": 100,
+            "file_name": "[Bonus] Genshin in Thailand Medley.wav",
+            "file_path": "./Audio/wav_formats/GenshinInThailand_HQ/[Bonus] Genshin in Thailand Medley.wav",
+            "format": "WAV",
+            "size": "229752406",
+            "duration": "0:13:04"
+        },
+        {
+            "id": 101,
+            "file_name": "[22] Genshin in Thailand Opening #1 (Arrange by NEiX).wav",
+            "file_path": "./Audio/wav_formats/GenshinInThailand_HQ/[22] Genshin in Thailand Opening #1 (Arrange by NEiX).wav",
+            "format": "WAV",
+            "size": "210137554",
+            "duration": "0:05:58"
+        },
+        {
+            "id": 102,
+            "file_name": "[23] Zhongli Extreme (Remix by NEiX).wav",
+            "file_path": "./Audio/wav_formats/GenshinInThailand_HQ/[23] Zhongli Extreme (Remix by NEiX).wav",
+            "format": "WAV",
+            "size": "61215928",
+            "duration": "0:03:19"
+        },
+        {
+            "id": 103,
+            "file_name": "[05] Yun Jin Theme (Remix by NEiX).wav",
+            "file_path": "./Audio/wav_formats/GenshinInThailand_HQ/[05] Yun Jin Theme (Remix by NEiX).wav",
+            "format": "WAV",
+            "size": "57086122",
+            "duration": "0:03:05"
+        },
+        {
+            "id": 104,
+            "file_name": "[11] Albedo Theme (Remix by NEiX).wav",
+            "file_path": "./Audio/wav_formats/GenshinInThailand_HQ/[11] Albedo Theme (Remix by NEiX).wav",
+            "format": "WAV",
+            "size": "38324980",
+            "duration": "0:02:00"
+        },
+        {
+            "id": 105,
+            "file_name": "[07] Hu Tao Theme (Remix by NEiX).wav",
+            "file_path": "./Audio/wav_formats/GenshinInThailand_HQ/[07] Hu Tao Theme (Remix by NEiX).wav",
+            "format": "WAV",
+            "size": "27463264",
+            "duration": "0:01:22"
+        },
+        {
+            "id": 106,
+            "file_name": "[03] Raiden Shogun Theme (Remix by NEiX).wav",
+            "file_path": "./Audio/wav_formats/GenshinInThailand_HQ/[03] Raiden Shogun Theme (Remix by NEiX).wav",
+            "format": "WAV",
+            "size": "48660838",
+            "duration": "0:02:35"
+        },
+        {
+            "id": 107,
+            "file_name": "[17] YOIMIYA EXTREME (Remix by NEiX).wav",
+            "file_path": "./Audio/wav_formats/GenshinInThailand_HQ/[17] YOIMIYA EXTREME (Remix by NEiX).wav",
+            "format": "WAV",
+            "size": "165306248",
+            "duration": "0:04:40"
+        },
+        {
+            "id": 108,
+            "file_name": "[14] AYAKAxAYATO (Remix by NEiX).wav",
+            "file_path": "./Audio/wav_formats/GenshinInThailand_HQ/[14] AYAKAxAYATO (Remix by NEiX).wav",
+            "format": "WAV",
+            "size": "40839004",
+            "duration": "0:02:08"
+        },
+        {
+            "id": 109,
+            "file_name": "[21] Ayaka Wishing Gacha (Arrange by NEiX).wav",
+            "file_path": "./Audio/wav_formats/GenshinInThailand_HQ/[21] Ayaka Wishing Gacha (Arrange by NEiX).wav",
+            "format": "WAV",
+            "size": "38324980",
+            "duration": "0:02:00"
+        },
+        {
+            "id": 110,
+            "file_name": "[08] Thoma Theme (Remix by NEiX).wav",
+            "file_path": "./Audio/wav_formats/GenshinInThailand_HQ/[08] Thoma Theme (Remix by NEiX).wav",
+            "format": "WAV",
+            "size": "36164912",
+            "duration": "0:01:52"
+        },
+        {
+            "id": 111,
+            "file_name": "[16] Collei (Remix by NEiX).wav",
+            "file_path": "./Audio/wav_formats/GenshinInThailand_HQ/[16] Collei (Remix by NEiX).wav",
+            "format": "WAV",
+            "size": "25454614",
+            "duration": "0:01:15"
+        },
+        {
+            "id": 112,
+            "file_name": "[19] A Brilliant Banquet of Music (Remix by NEiX).wav",
+            "file_path": "./Audio/wav_formats/GenshinInThailand_HQ/[19] A Brilliant Banquet of Music (Remix by NEiX).wav",
+            "format": "WAV",
+            "size": "19532912",
+            "duration": "0:00:54"
+        },
+        {
+            "id": 113,
+            "file_name": "[10] Ganyu Theme (Remix by NEiX).wav",
+            "file_path": "./Audio/wav_formats/GenshinInThailand_HQ/[10] Ganyu Theme (Remix by NEiX).wav",
+            "format": "WAV",
+            "size": "56592406",
+            "duration": "0:03:03"
+        },
+        {
+            "id": 114,
+            "file_name": "[20] ITTO x AYATO + XIAO (Remix by NEiX).wav",
+            "file_path": "./Audio/wav_formats/GenshinInThailand_HQ/[20] ITTO x AYATO + XIAO (Remix by NEiX).wav",
+            "format": "WAV",
+            "size": "92386696",
+            "duration": "0:05:07"
+        },
+        {
+            "id": 115,
+            "file_name": "[18] Port Ormos (Remix by NEiX).wav",
+            "file_path": "./Audio/wav_formats/GenshinInThailand_HQ/[18] Port Ormos (Remix by NEiX).wav",
+            "format": "WAV",
+            "size": "77493816",
+            "duration": "0:03:12"
+        },
+        {
+            "id": 116,
+            "file_name": "[13] Aranara (Remix by NEiX).wav",
+            "file_path": "./Audio/wav_formats/GenshinInThailand_HQ/[13] Aranara (Remix by NEiX).wav",
+            "format": "WAV",
+            "size": "49077816",
+            "duration": "0:01:58"
+        },
+        {
+            "id": 117,
+            "file_name": "[15] DILUC x FICHL (Remix by NEiX).wav",
+            "file_path": "./Audio/wav_formats/GenshinInThailand_HQ/[15] DILUC x FICHL (Remix by NEiX).wav",
+            "format": "WAV",
+            "size": "22487698",
+            "duration": "0:01:05"
+        },
+        {
+            "id": 118,
+            "file_name": "[01] Zhongli Theme (Remix by NEIX).wav",
+            "file_path": "./Audio/wav_formats/GenshinInThailand_HQ/[01] Zhongli Theme (Remix by NEIX).wav",
+            "format": "WAV",
+            "size": "42225838",
+            "duration": "0:02:13"
+        },
+        {
+            "id": 119,
+            "file_name": "[02] Yoimiya Theme (Remix by NEiX).wav",
+            "file_path": "./Audio/wav_formats/GenshinInThailand_HQ/[02] Yoimiya Theme (Remix by NEiX).wav",
+            "format": "WAV",
+            "size": "44158264",
+            "duration": "0:02:20"
+        },
+        {
+            "id": 120,
+            "file_name": "[09] Eula Theme (Remix by NEiX).wav",
+            "file_path": "./Audio/wav_formats/GenshinInThailand_HQ/[09] Eula Theme (Remix by NEiX).wav",
+            "format": "WAV",
+            "size": "37831264",
+            "duration": "0:01:58"
+        },
+        {
+            "id": 121,
+            "file_name": "YOASOBI - Idol 「English」 UltimateRodhare Edition - NEiX.wav",
+            "file_path": "./Audio/wav_formats/iDol UltimateRodhare 2k23/YOASOBI - Idol 「English」 UltimateRodhare Edition - NEiX.wav",
+            "format": "WAV",
+            "size": "115582074",
+            "duration": "0:06:25"
+        },
+        {
+            "id": 122,
+            "file_name": "YOASOBI - Idol 「Mixed instrument」 UltimateRodhare Edition - NEiX.wav",
+            "file_path": "./Audio/wav_formats/iDol UltimateRodhare 2k23/YOASOBI - Idol 「Mixed instrument」 UltimateRodhare Edition - NEiX.wav",
+            "format": "WAV",
+            "size": "99142610",
+            "duration": "0:05:36"
+        },
+        {
+            "id": 123,
+            "file_name": "YOASOBI - Idol 「アイドル」 UltimateRodhare Edition - NEiX.wav",
+            "file_path": "./Audio/wav_formats/iDol UltimateRodhare 2k23/YOASOBI - Idol 「アイドル」 UltimateRodhare Edition - NEiX.wav",
+            "format": "WAV",
+            "size": "115543852",
+            "duration": "0:06:25"
+        },
+        {
+            "id": 124,
+            "file_name": "YOASOBI - Idol 「Instrument」 UltimateRodhare Edition - NEiX.wav",
+            "file_path": "./Audio/wav_formats/iDol UltimateRodhare 2k23/YOASOBI - Idol 「Instrument」 UltimateRodhare Edition - NEiX.wav",
+            "format": "WAV",
+            "size": "115564114",
+            "duration": "0:06:25"
+        }
+    ]
+}
