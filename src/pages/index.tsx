@@ -1,6 +1,6 @@
-import Image from "next/image";
+
 import { useEffect, useState } from "react";
-import { Inter } from "next/font/google";
+
 import CardFile from "./components/CardFile";
 import axios from "axios";
 
@@ -8,10 +8,10 @@ import axios from "axios";
 export default function Home() {
   const [data, setData] = useState<null | any[]>(null)
   useEffect(() => {
-    const url = 'http://' + process.env.NEXT_PUBLIC_DB_API
-    const apiport = ':4000'
+    const url = 'https://' + process.env.NEXT_PUBLIC_DB_API
+    // const apiport = ':4000'
     const apiroute = '/songs/wav'
-    const apiurl = url + apiport + apiroute
+    const apiurl = url + apiroute
     axios.get(apiurl as string).then((res) => setData(res.data.data))
   })
   return (
