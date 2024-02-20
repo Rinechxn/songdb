@@ -27,20 +27,41 @@ export enum Format {
 
 export default function Home() {
   const [data, setData] = useState<Data[]>()
+  const [error, setError] = useState<string | null>(null); 
   useEffect(() => {
-    if (!data) {
-      const url = 'https://' + process.env.NEXT_PUBLIC_DB_API as string
-      const apiroute = '/songs/wav'
-      const apiurl = url + apiroute
+    if (!data && !error) { // Check for error state as well
+      const url = 'https://' + process.env.NEXT_PUBLIC_DB_API as string;
+      const apiroute = '/songs/wav_formats';
+      const apiurl = url + apiroute;
       axios.get<unknown, AxiosResponse<ResponseData>>(apiurl)
         .then((res) => {
-          setData(res.data.data)
+          setData(res.data.data);
         })
         .catch((err: AxiosError) => {
-          ErrorHandle(err)
-        })
+          setError(err.message); // Set error message on catch
+        });
     }
-  }, [])
+  }, [data, error]);
+  if (error) {
+    // Render error state
+    return (
+      <div className="flex items-center justify-start w-full h-screen bg-[#0e0e0e] p-4">
+        <div className="container mx-auto text-left w-[64rem]">
+          <h1 className="text-3xl font-semibold text-red-500">An Error Occurred</h1>
+          <p className="mt-4 text-lg text-white/60">We're sorry, something went wrong.</p>
+          <div className="mt-6 bg-[#242424]">
+            <p className="inline-block bg-black px-6 py-3 text-sm font-left text-white">
+              Error Details:
+            </p>
+            <pre className="mt-2 text-sm text-left text-white  overflow-x-auto p-4">
+              {JSON.stringify({ message: error }, null, 2)}
+            </pre>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return data ? (
     <>
       <main className="py-32 w-full flex flex-col justify-center bg-[#1e1922]">
@@ -65,14 +86,28 @@ export default function Home() {
   )
 }
 
-export function ErrorHandle(err: AxiosError) {
-  console.error(err)
-  document.querySelector("html")!.innerHTML = ReactDOMServer.renderToString(
-    <p aria-readonly style={{
-      width: "100%",
-      height: "100%",
-      overflow: "auto",
-      position: "fixed",
-    }}>{JSON.stringify(err.toJSON(), null, 2)}</p>
-  )
-}
+// export function ErrorHandle(err: AxiosError) {
+//   console.error(err);
+
+//   // Determine the appropriate message
+//   const message = err.message;
+
+//   const errorDisplay = (
+//     <div className="flex items-center justify-center w-screen h-screen bg-gray-100">
+//       <div className="container mx-auto text-center">
+//         <h1 className="text-3xl font-semibold text-red-500">An Error Occurred</h1>
+//         <p className="mt-4 text-lg text-gray-700">We're sorry, something went wrong.</p>
+//         <div className="mt-6">
+//           <p className="inline-block px-6 py-3 text-sm font-medium text-gray-700 bg-gray-200 rounded-md">
+//             Error Details:
+//           </p>
+//           <pre className="mt-2 text-sm text-left text-gray-600 bg-gray-50 rounded-lg overflow-x-auto p-4">
+//             {JSON.stringify({ message }, null, 2)}
+//           </pre>
+//         </div>
+//       </div>
+//     </div>
+//   );
+
+//   document.querySelector("html")!.innerHTML = ReactDOMServer.renderToString(errorDisplay);
+// }

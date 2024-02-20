@@ -5,11 +5,13 @@ import WaveFormIcon from "./icns/waveformicon";
 import DownloadButton from "./icns/downloadbtn";
 import LoadScreen from "./loading";
 import { useAudio } from '../../libs/AudioContext';
+import { useDownload } from '../../libs/DownloadContext';
 
 interface CardFileProps {
     data?: {
         file_name: string;
         file_path: string;
+        unique_id: string;
         size: number;
         duration: string;
     };
@@ -17,13 +19,50 @@ interface CardFileProps {
 
 const CardFile: React.FC<CardFileProps> = ({ data }) => {
     const { setAudioSrc, setFileDetails } = useAudio();
+    const { startDownload, finishDownload } = useDownload();
+    const apisrc = 'https://' + process.env.NEXT_PUBLIC_DB_API 
     if (!data) {
         return <LoadScreen />; // Fixed component name
     }
     // const { playAudio } = useAudio();
     const handlePlay = () => {
-        setAudioSrc(data.file_path); // Assuming this sets the actual audio source URL
+        // Construct the HLS stream URL using the unique_id
+        const hlsStreamUrl = 'streaming/' + data.unique_id + '/manifest.m3u8';
+    
+        // Set the audio source URL to the HLS stream path
+        setAudioSrc(hlsStreamUrl);
+    
+        // Update file details for display
         setFileDetails({ fileName: data.file_name, filePath: data.file_path });
+    };
+
+    const handleDownloadClick = async () => {
+        if (!data) return;
+    
+        // Mark the start of the download
+        startDownload(data.file_name, data.size);
+    
+        const fileUrl = apisrc + '/audiodownload/wav_formats/' + data.file_name;
+        try {
+            const response = await fetch(fileUrl);
+            if (!response.ok) throw new Error('Network response was not ok');
+            const blob = await response.blob();
+            const downloadUrl = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = downloadUrl;
+            a.download = data.file_name;
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+            window.URL.revokeObjectURL(downloadUrl);
+    
+            // Since we can't track progress, immediately mark the download as finished
+            finishDownload();
+        } catch (error) {
+            console.error('Download failed:', error);
+            // Handle download error
+            finishDownload(); // Ensure to call finishDownload even if an error occurs
+        }
     };
 
     // Convert seconds into MM:SS format
@@ -57,9 +96,9 @@ const CardFile: React.FC<CardFileProps> = ({ data }) => {
                     </div>
                 </button>
 
-                <a href={`https://sdbbeta.uppriez.net/${data.file_path}`} download={data.file_name} target='about:blank' className="flex">
+                <button onClick={handleDownloadClick} className="flex"> {/* Use onClick with custom handler */}
                     <DownloadButton />
-                </a>
+                </button>
             </section>
         </>
     );

@@ -23,7 +23,7 @@ interface AudioProviderProps {
 export const AudioProvider: React.FC<AudioProviderProps> = ({ children }) => {
     const [audioSrc, setAudioSrc] = useState('');
     const [fileDetails, setFileDetails] = useState({ fileName: '', filePath: '' });
-
+    console.log(fileDetails, audioSrc)
     const value = {
         audioSrc,
         fileDetails,
