@@ -27,7 +27,7 @@ export const DownloadProvider: React.FC<{ children: ReactNode }> = ({ children }
     };
 
     const updateProgress = (progress: number) => {
-        console.log(`Updating progress: ${progress}%`);
+        // console.log(`Updating progress: ${progress}%`);
         setProgress(progress);
     };
 

@@ -7,7 +7,7 @@ function DownloadStatus() {
 
     // Calculate the downloaded size based on progress
     const downloadedSize = (fileSize * progress) / 100;
-    console.log(progress, fileName, fileSize, isDownloading);
+    // strokeLinecap.log(progress, fileName, fileSize, isDownloading);
 
     const downloadedSizeMB = (fileSize * progress / 100) / (1024 * 1024);
     const totalSizeMB = fileSize / (1024 * 1024);

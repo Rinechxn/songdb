@@ -16,7 +16,7 @@ function WaveFormIcon() {
                         <defs>
                             <style>
                                 {
-                                    ".cls-1{fill:none;stroke:#000000;stroke-miterlimit:10;stroke-width:1.83px}"
+                                    ".cls-1{fill:none;stroke:#000000;stroke-miterlimit:10;strokeWidth:1.83px}"
                                 }
                             </style>
                         </defs>

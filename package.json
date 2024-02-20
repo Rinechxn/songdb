@@ -1,6 +1,6 @@
 {
   "name": "songdb",
-  "version": "2024.02.20",
+  "version": "2024.02.21_R1200",
   "private": true,
   "scripts": {
     "dev": "next dev",

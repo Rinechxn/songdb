@@ -11,7 +11,7 @@ function Nav() {
     return (
         <>
             <nav className="fixed lg:hidden flex items-center justify-between w-screen p-4">
-                <div className=" bg-[#31215c]/50 border border-[#472f66] backdrop-blur-lg rounded-full px-4 py-1 flex  items-center justify-center space-x-4">
+                <div className=" bg-[#222222]/50 border border-[#333333] backdrop-blur-lg rounded-full px-4 py-1 flex  items-center justify-center space-x-4">
                     <Link href={"/"}>
                         <div className="w-6 h-6 fill-white">
                             <HomeIcon />
