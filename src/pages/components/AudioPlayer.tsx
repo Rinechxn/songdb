@@ -104,7 +104,7 @@ const AudioPlayer: React.FC = () => {
                         value={playerState.time}
                         onChange={(val) => audioRef.current!.currentTime = parseInt(val.target.value)}
                         disabled={!(playerState.duration > 0)}
-                        className="md:flex w-full px-7 lg:min-w-[300px] ui-slider"
+                        className="md:flex w-full lg:min-w-[300px] ui-slider"
                     />
                     <div className="text-base text-left whitespace-nowrap opacity-50">{playerState.duration > 0 ? formatTime(playerState.duration) : "--:--"}</div>
                 </div>
