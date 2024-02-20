@@ -4,7 +4,7 @@ import bytesToSize from "@/utils/bytetosize";
 import WaveFormIcon from "./icns/waveformicon";
 import DownloadButton from "./icns/downloadbtn";
 import StarIcon from './icns/star'
-import LoadScreen from "./Loading";
+import LoadScreen from "./LoadingScreen";
 import { useAudio } from '@/libs/AudioContext';
 import { useDownload } from '@/libs/DownloadContext';
 

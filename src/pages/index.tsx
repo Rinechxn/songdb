@@ -3,7 +3,7 @@ import React, { useEffect, useState, lazy } from "react";
 // import ReactDOMServer from 'react-dom/server';
 import axios, { AxiosError, AxiosResponse } from 'axios';
 const CardFile = lazy(() => import("./components/CardFile"));
-const LoadScreen = lazy(() => import("./components/Loading"));
+const LoadScreen = lazy(() => import("./components/LoadingScreen"));
 import Head from "next/head";
 import SearchIcon from "./components/icns/searchicon";
 export interface ResponseData {
