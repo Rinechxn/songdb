@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  user-select: none;
+}
+/* CSS */
+:root {
+  font-family: Inter, Kanit, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+}
+@supports (font-variation-settings: normal) {
+  :root { font-family: InterVariable,Kanit, sans-serif; }
+}
+
+body {
+  color: white;
+  background-color: #111111;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/*********** Baseline, reset styles ***********/
+/* Container styles */
+.ui-slider {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 8px; /* Specified height */
+  background: #3f3f3f; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 1; /* Set transparency (optional) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  border-radius: 9999px;
+}
+
+.ui-slider:hover {
+  opacity: 1; /* Fully opaque on hover */
+}
+
+
+.ui-slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 16px; /* Width and height of the slider thumb */
+  height: 16px;
+  background: #ffffff; /* Spotify green */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 50%; /* Circular thumb */
+}
+
+.ui-slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+
+
+
+/*********** Firefox styles ***********/
+
+
+/* total width */
+body::-webkit-scrollbar {
+  background-color: #1f1f1f;
+  width: 8px;
+}
+
+/* background of the scrollbar except button or resizer */
+body::-webkit-scrollbar-track {
+  background-color: #1f1f1f;
+}
+
+/* scrollbar itself */
+body::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 2px solid #1f1f1f;
+}
+
+/* set button(top and bottom of the scrollbar) */
+body::-webkit-scrollbar-button {
+  display:none;
+}
+
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}
+
+@import 'font'
+

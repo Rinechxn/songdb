@@ -1,5 +1,5 @@
 // _app.tsx
-import "@/styles/globals.css";
+import "@/styles/globals.scss";
 import type { AppProps } from "next/app";
 import Nav from "./components/Nav";
 import AudioPlayer from "./components/AudioPlayer";
@@ -18,15 +18,20 @@ export default function App({ Component, pageProps }: AppProps) {
     <ErrorProvider>
       <AudioProvider>
         <DownloadProvider>
-          <ErrorDisplay/>
-          <Nav />
-          <div className="flex">
-            <Sidebar />
-            <div className="lg:pl-[318px] min-h-screen flex-1 overflow-x-auto"> {/* Adjust `ml-64` based on the sidebar's width */}
-              <Component {...pageProps} />
+          <ErrorDisplay />
+
+          
+            <div className="flex">
+              <Sidebar />
+              <div className="lg:pl-[318px] min-h-screen flex-1 overflow-x-auto"> {/* Adjust `ml-64` based on the sidebar's width */}
+                <Component {...pageProps} />
+              </div>
             </div>
-          </div>
-          <PlayerOrStatus />
+            <div>
+              <PlayerOrStatus />
+            </div>
+            <Nav />
+        
         </DownloadProvider>
       </AudioProvider>
     </ErrorProvider>
@@ -45,7 +50,7 @@ const PlayerOrStatus = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.25, ease: "easeInOut" }}
+          transition={{ duration: 0.125, ease: "easeInOut" }}
         >
           <DownloadStatus />
         </motion.div>
@@ -55,7 +60,7 @@ const PlayerOrStatus = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.25, ease: "easeInOut" }}
+          transition={{ duration: 0.125, ease: "easeInOut" }}
         >
           <AudioPlayer />
         </motion.div>

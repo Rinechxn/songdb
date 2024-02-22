@@ -1,7 +1,7 @@
 function WaveFormIcon() {
     return (
         <>
-            <div className="p-2 bg-white w-8 h-8 rounded-full">
+            <div className="p-2 bg-white w-8 h-8 rounded-full animate-spin">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     id="Layer_1"

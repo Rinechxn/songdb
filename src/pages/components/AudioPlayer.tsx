@@ -1,17 +1,29 @@
 // ./components/AudioPlayer.tsx
 import { useEffect, useRef } from 'react';
-import { useAudio } from '../../libs/AudioContext';
+import { useAudio } from '@/libs/AudioContext';
 import { useState } from 'react';
 import VolIcon from './icns/volumeicon';
 import MuteIcon from './icns/muteicon';
 import PlayIcon from './icns/playicon';
 import PauseIcon from './icns/pauseicon';
+import RepeatIcon from './icns/repeaticon';
+import RepeatOneIcon from './icns/repeatoneicon';
+import SkipLeftIcon from './icns/skipleft';
+import SkipRightIcon from './icns/skipright';
+import ShuffleIcon from './icns/shuffleicon';
+import WaveFormIcon from "./icns/waveformicon";
 import Hls from 'hls.js';
 
 interface PlayerState {
     playing: boolean,
     time: number,
     duration: number
+}
+
+enum RepeatMode {
+    None,
+    RepeatAll,
+    RepeatOne,
 }
 
 const AudioPlayer: React.FC = () => {
@@ -24,6 +36,11 @@ const AudioPlayer: React.FC = () => {
         time: -1,
         duration: -1
     })
+    const [repeatMode, setRepeatMode] = useState<RepeatMode>(RepeatMode.None);
+    // const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
+    const [tooltipVisible, setTooltipVisible] = useState(false);
+    const [tooltipContent, setTooltipContent] = useState('');
+
     const lnk = 'https://songapi.uppriez.net/' + audioSrc;
     // Handle time update and metadata loaded
     useEffect(() => {
@@ -52,13 +69,52 @@ const AudioPlayer: React.FC = () => {
         setPlayerState({ ...playerState, playing: !audioRef.current?.paused as boolean })
     }
 
-    function reset() {
-        setPlayerState({
-            playing: false,
-            time: -1,
-            duration: -1
-        })
-        setAudioSrc("")
+    function reset(repeat: boolean = false) {
+        if (repeat) {
+            audioRef.current!.currentTime = 0;
+            audioRef.current!.play();
+            setPlayerState(prevState => ({
+                ...prevState,
+                playing: true,
+                time: 0, // Reset time to 0 when repeating
+            }));
+        } else {
+            setAudioSrc("");
+            setPlayerState({
+                playing: false,
+                time: -1,
+                duration: -1,
+            });
+        }
+    }
+
+    function handlePrevTrack() {
+
+        console.log('Previous track');
+        // Example: setAudioSrc(prevTrackSrc);
+    }
+
+    // Placeholder for next track handler
+    function handleNextTrack() {
+
+        console.log('Next track');
+        // Example: setAudioSrc(nextTrackSrc);
+    }
+
+    function handleRepeatClick() {
+        setRepeatMode((prevMode) => {
+            const newMode = (prevMode + 1) % 3;
+
+            // Update tooltip content based on the new repeat mode
+            const repeatMessages = ["Repeat Off", "Repeat All", "Repeat One"];
+            setTooltipContent(repeatMessages[newMode]);
+
+            // Show tooltip and hide it after 3 seconds
+            setTooltipVisible(true);
+            setTimeout(() => setTooltipVisible(false), 3000);
+
+            return newMode;
+        });
     }
 
     // Volume handling
@@ -77,19 +133,47 @@ const AudioPlayer: React.FC = () => {
 
 
     return (
-        <div className="flex-col items-stretch fixed bottom-0 left-0 right-0 backdrop-blur-md bg-[#1a1a1af5] border-t border-[#646464bb] p-4 flex lg:flex-row lg:items-center justify-center text-white">
+        <div className="flex-col items-stretch pb-16 lg:pb-4 fixed bottom-0 left-0 right-0 backdrop-blur-md bg-[#1a1a1af5] border-t border-[#646464bb] p-4 flex lg:flex-row lg:items-center justify-center text-white">
             {/* Play/Pause & Track Info (Left) */}
-            <div className="flex items-center space-x-4 md:pr-32">
-                <button disabled={!(playerState.duration > 0)} onClick={() => { togglePlayPause(); sest(st + 1); }} className="mr-4 active:scale-75 duration-200">
-                    {playerState.playing ? (
-                        <PauseIcon />
-                    ) : (
-                        <PlayIcon />
-                    )}
-                </button>
-                <div className="flex flex-col min-w-0 max-w-48">
-                    {playerState.duration > 0 ? <span className="text-[10px] font-semibold truncate uppercase" title="Now Playing">Now Playing</span> : null}
-                    <span className="text-sm truncate" title={fileDetails.fileName}>{fileDetails.fileName}</span>
+            <div className="flex items-center flex-col lg:flex-row">
+                <div className="flex items-center space-x-4 md:pr-4 pb-4 lg:pb-0">
+                    {/* <button className='active:scale-75 duration-200 w-7'>
+                        <SkipLeftIcon />
+                    </button> */}
+                    <button disabled={!(playerState.duration > 0)} onClick={() => { togglePlayPause(); sest(st + 1); }} className="mr-4 active:scale-75 duration-200">
+                        {playerState.playing ? (
+                            <PauseIcon />
+                        ) : (
+                            <PlayIcon />
+                        )}
+                    </button>
+
+                    {/* Repeat Button (Repeat off / Repeat On / Repeat one /) */}
+                    <div className=" relative flex items-center">
+                        <button onClick={handleRepeatClick} className={`mr-1 active:scale-75 duration-200 w-5 ${repeatMode === RepeatMode.None ? 'opacity-50' : ''}`}>
+                            {repeatMode === RepeatMode.RepeatAll ? <RepeatIcon /> : repeatMode === RepeatMode.RepeatOne ? <RepeatOneIcon /> : <RepeatIcon />}
+                        </button>
+                        <div className={`absolute -mt-16 w-auto duration-150 bg-black text-white p-2 rounded shadow-lg text-xs ${tooltipVisible ? '' : 'hidden'}`}>
+                            {tooltipContent}
+                        </div>
+                    </div>
+{/* 
+                    <button className=' active:scale-75 duration-200 w-6'>
+                        <ShuffleIcon />
+                    </button>
+
+                    <button className=' active:scale-75 duration-200 w-7'>
+                        <SkipRightIcon />
+                    </button> */}
+                </div>
+
+                <div className='flex space-x-2' >
+                    {playerState.duration > 0 ? <WaveFormIcon /> : null}
+                    <div className="flex flex-col  min-w-0 max-w-72">
+                        {playerState.duration > 0 ? <span className="text-[10px] font-semibold truncate uppercase" title="Now Playing">Now Playing</span> : null}
+                        {playerState.duration > 0 ? <span className="text-sm truncate" title={fileDetails.fileName}>{fileDetails.fileName}</span> : null}
+                        
+                    </div>
                 </div>
             </div>
 
@@ -132,7 +216,7 @@ const AudioPlayer: React.FC = () => {
                     setPlayerState({ ...playerState, playing: true, duration: evt.currentTarget.duration })
                     evt.currentTarget.play()
                 }}
-                onEnded={reset}
+                onEnded={() => reset(repeatMode === RepeatMode.RepeatOne)}
             />
         </div>
     );

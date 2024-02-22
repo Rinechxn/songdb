@@ -7,6 +7,7 @@ import StarIcon from './icns/star'
 import LoadScreen from "./LoadingScreen";
 import { useAudio } from '@/libs/AudioContext';
 import { useDownload } from '@/libs/DownloadContext';
+import PlaySolidIcon from './icns/playsolid';
 
 interface CardFileProps {
     data?: {
@@ -96,19 +97,16 @@ const CardFile: React.FC<CardFileProps> = ({ data }) => {
         <>
 
             <section className="p-4 bg-[#1a1a1a] hover:bg-[#646464] duration-150 border border-y border-x-0 border-[#555555] flex items-center justify-between space-x-3">
-                <button onClick={handlePlay}>
-
+                <button onClick={handlePlay} >
                     <div className="flex items-center space-x-2">
-                        <div>
-                            <WaveFormIcon />
+                        <div  className=''>
+                            {fileDetails.fileName == data.file_name ? <WaveFormIcon /> : <PlaySolidIcon/>}
                         </div>
                         <div className="flex flex-col justify-start min-w-0 max-w-[12rem] md:max-w-[29rem] lg:max-w-[32rem] xl:max-w-full">
-                            <p className="text-left truncate font-medium ">{fileDetails.fileName == data.file_name ? <span className="bg-green-100 text-green-800 text-sm font-medium me-2 px-2.5 py-0.5 pe-2 rounded dark:bg-green-900 dark:text-green-300 animate-pulse">Playing</span> : null}{data.file_name.split(".").slice(0, -1)}</p>
+                            <p className="text-left truncate font-medium ">{fileDetails.fileName == data.file_name ? <span className="bg-green-100 text-green-800 text-sm font-medium me-2 px-2.5 py-0.5 pe-2 rounded dark:bg-green-900 dark:text-green-300 animate-pulse">Playing</span> : null}{data.file_name}</p>
                             <p className="text-left text-sm text-white/40 truncate">{data.file_path}</p>
                         </div>
                     </div>
-
-
                     <div className="flex space-x-2 text-sm pt-2">
                         <p>Size: {bytesToSize(data.size)}</p>
                         <p>Duration: {formatTime(data.duration)}</p>

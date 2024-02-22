@@ -23,6 +23,7 @@ interface AudioProviderProps {
 export const AudioProvider: React.FC<AudioProviderProps> = ({ children }) => {
     const [audioSrc, setAudioSrc] = useState('');
     const [fileDetails, setFileDetails] = useState({ fileName: '', filePath: '' });
+    
     // console.log(fileDetails, audioSrc)
     const value = {
         audioSrc,
@@ -37,6 +38,8 @@ export const AudioProvider: React.FC<AudioProviderProps> = ({ children }) => {
         setIsMuted(!isMuted);
         setVolume(isMuted ? 1 : 0); // Toggle volume between 0 and 1
     };
+
+    
 
     return <AudioContext.Provider value={value}>{children}</AudioContext.Provider>;
 };

@@ -2,35 +2,45 @@ import Link from "next/link";
 import DiscordIcon from "./icns/discord";
 import BugIcon from "./icns/bugicon";
 import GithubIcon from "./icns/ghicon";
-// import VolIcon from "./icns/volumeicon";
-// import MuteIcon from "./icns/muteicon";
+import StarIcon from "./icns/star";
 import HomeIcon from "./icns/homeicon";
-// import { useAudio } from './Audio/AudioContext';
+
 function Nav() {
-    // const { isMuted, toggleMute } = useAudio();
+
     return (
         <>
-            <nav className="fixed lg:hidden flex items-center justify-between w-screen p-4">
-                <div className=" bg-[#222222]/50 border border-[#333333] backdrop-blur-lg rounded-full px-4 py-1 flex  items-center justify-center space-x-4">
-                    <Link href={"/"}>
+            <nav className="fixed lg:hidden bottom-0 left-0 right-0 flex items-center justify-between w-screen">
+                <div className="  w-full  px-4 py-1 flex  items-center justify-center space-x-8">
+
+                    <Link href={"/"} className="flex flex-col py-2 items-center justify-center opacity-80 duration-150 hover:opacity-100">
+                        <div className="w-6 h-6 fill-white">
+                            <StarIcon />
+                        </div>
+                        <b className="text-[10px]">Favorites</b>
+                    </Link>
+                    <Link href="https://discord.gg/Ab6Akh8rQq" target="_blank" className="flex flex-col py-2 items-center justify-center opacity-80 duration-150 hover:opacity-100">
+                        <div className="w-6 h-6  fill-white">
+                            <DiscordIcon />
+                        </div>
+                        <b className="text-[10px]">Discord</b>
+                    </Link>
+                    <Link href={"/"} className="flex flex-col py-2 items-center justify-center opacity-80 duration-150 hover:opacity-100">
                         <div className="w-6 h-6 fill-white">
                             <HomeIcon />
                         </div>
+                        <b className="text-[10px]">Home</b>
                     </Link>
-                    <Link href="https://discord.gg/Ab6Akh8rQq" target="_blank" className="flex space-x-2 py-2 items-center">
-                        <div className="w-6 h-6 mt-1 fill-white">
-                            <DiscordIcon />
-                        </div>
-                    </Link>
-                    <Link href="https://github.com/Rinechxn/songdb/issues" target="_blank" className="flex space-x-2 py-2 items-center">
+                    <Link href="https://github.com/Rinechxn/songdb/issues" target="_blank" className="flex flex-col py-2 items-center justify-center opacity-80 duration-150 hover:opacity-100">
                         <div className="w-6 h-6 fill-white">
                             <BugIcon />
                         </div>
+                        <b className="text-[10px]">Report Bug</b>
                     </Link>
-                    <Link href="https://github.com/Rinechxn/songdb" target="_blank" className="flex space-x-2 py-2 items-center">
+                    <Link href="https://github.com/Rinechxn/songdb" target="_blank" className="flex flex-col py-2 items-center justify-center opacity-80 duration-150 hover:opacity-100">
                         <div className="w-6 h-6 fill-white">
                             <GithubIcon />
                         </div>
+                        <b className="text-[10px]">Github</b>
                     </Link>
 
                 </div>
