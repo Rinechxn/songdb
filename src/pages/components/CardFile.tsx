@@ -12,6 +12,7 @@ import PlaySolidIcon from './icns/playsolid';
 interface CardFileProps {
     data?: {
         file_name: string;
+        track_name: string;
         file_path: string;
         unique_id: string;
         size: number;
@@ -52,7 +53,7 @@ const CardFile: React.FC<CardFileProps> = ({ data }) => {
     const handlePlay = () => {
         const hlsStreamUrl = 'streaming/' + data.unique_id + '/manifest.m3u8';
         setAudioSrc(hlsStreamUrl);
-        setFileDetails({ fileName: data.file_name, filePath: data.file_path });
+        setFileDetails({ fileName: data.file_name, filePath: data.file_path, trackName: data.track_name });
         // setIsPlaying(true); // Update playing status
     };
 
@@ -103,7 +104,7 @@ const CardFile: React.FC<CardFileProps> = ({ data }) => {
                             {fileDetails.fileName == data.file_name ? <WaveFormIcon /> : <PlaySolidIcon/>}
                         </div>
                         <div className="flex flex-col justify-start min-w-0 max-w-[12rem] md:max-w-[29rem] lg:max-w-[32rem] xl:max-w-full">
-                            <p className="text-left truncate font-medium ">{fileDetails.fileName == data.file_name ? <span className="bg-green-100 text-green-800 text-sm font-medium me-2 px-2.5 py-0.5 pe-2 rounded dark:bg-green-900 dark:text-green-300 animate-pulse">Playing</span> : null}{data.file_name}</p>
+                            <p className="text-left truncate font-medium ">{fileDetails.fileName == data.file_name ? <span className="bg-green-100 text-green-800 text-sm font-medium me-2 px-2.5 py-0.5 pe-2 rounded dark:bg-green-900 dark:text-green-300 animate-pulse">Playing</span> : null}{data.track_name}</p>
                             <p className="text-left text-sm text-white/40 truncate">{data.file_path}</p>
                         </div>
                     </div>

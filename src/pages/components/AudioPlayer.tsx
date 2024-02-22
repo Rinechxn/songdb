@@ -171,7 +171,7 @@ const AudioPlayer: React.FC = () => {
                     {playerState.duration > 0 ? <WaveFormIcon /> : null}
                     <div className="flex flex-col  min-w-0 max-w-72">
                         {playerState.duration > 0 ? <span className="text-[10px] font-semibold truncate uppercase" title="Now Playing">Now Playing</span> : null}
-                        {playerState.duration > 0 ? <span className="text-sm truncate" title={fileDetails.fileName}>{fileDetails.fileName}</span> : null}
+                        {playerState.duration > 0 ? <span className="text-sm truncate" title={fileDetails.fileName}>{fileDetails.trackName}</span> : null}
                         
                     </div>
                 </div>

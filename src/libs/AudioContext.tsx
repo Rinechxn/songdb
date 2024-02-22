@@ -5,9 +5,10 @@ interface AudioContextType {
     fileDetails: {
         fileName: string;
         filePath: string;
+        trackName: string;
     };
     setAudioSrc: (src: string) => void;
-    setFileDetails: (details: { fileName: string; filePath: string }) => void;
+    setFileDetails: (details: { fileName: string; filePath: string; trackName: string }) => void;
  
   
 }
@@ -22,7 +23,7 @@ interface AudioProviderProps {
 
 export const AudioProvider: React.FC<AudioProviderProps> = ({ children }) => {
     const [audioSrc, setAudioSrc] = useState('');
-    const [fileDetails, setFileDetails] = useState({ fileName: '', filePath: '' });
+    const [fileDetails, setFileDetails] = useState({ fileName: '', filePath: '', trackName: '' });
     
     // console.log(fileDetails, audioSrc)
     const value = {

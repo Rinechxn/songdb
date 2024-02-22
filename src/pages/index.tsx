@@ -15,6 +15,7 @@ export interface ResponseData {
 export interface Data {
   file_name: string;
   file_path: string;
+  track_name: string;
   unique_id: string;
   size: number;
   duration: string;
