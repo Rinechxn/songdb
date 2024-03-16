@@ -5,8 +5,10 @@ const CardFile = lazy(() => import("@/components/CardFile"));
 const LoadScreen = lazy(() => import("@/components/LoadingScreen"));
 import Head from "next/head";
 import NotiPopup from "@/components/Notification";
+// import Header from "@/components/Nav/Header";
+
 export interface ResponseData {
-  message: "success" | "failed" | "บลา ๆๆ";
+  message: "success" | "failed" | "null";
   data: Data[];
 }
 
@@ -94,7 +96,9 @@ export default function Home() {
           content="/seo.png"
         />
       </Head>
-
+      {/* <div className="w-full">
+        <Header />
+      </div> */}
       <main className="py-32 w-full flex flex-col justify-center bg-[#141414]">
         <div className="p-4 md:px-8 py-8 flex flex-col  space-y-1">
           <b className="text-4xl">NEiX's Song Database</b>
@@ -104,14 +108,14 @@ export default function Home() {
         <div className="px-4 md:px-8">
           <NotiPopup />
         </div>
-        <div className="pb-4 px-8 w-full flex items-center space-x-1">
-          {/* <form action="w-full">
+        <div className="px-4 md:px-8 py-8 w-full flex items-center space-x-1">
+          <form action="w-full">
             <input type="text" onInput={(evt) => {
               setData(olddata!.filter(v => {
                 return v.file_name.toLowerCase().includes(evt.currentTarget.value.toLowerCase())
               }))
             }} className="placeholder:text-white/50 w-full outline-none rounded-full p-2 px-4 bg-[#181818]" placeholder="Search.." />
-          </form> */}
+          </form>
         </div>
 
         <div className="flex flex-col space-y-2 px-4 md:p-8">

@@ -38,6 +38,6 @@ next-env.d.ts
 .env
 
 /public/*.js
-
+/public/sw.js.map
 #binary
 /bin

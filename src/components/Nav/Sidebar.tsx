@@ -17,7 +17,7 @@ function Sidebar() {
                 <br />
                 <div className="text-[12px] text-white/30">
                     <b>Powered By Uppriez Development</b>
-                    <p>Version {AboutVersion.version}</p>
+                    <p>Version {AboutVersion.webversion}</p>
                     <p>Next.js Version {AboutVersion.nextVersion}</p>
                 </div>
             </div>

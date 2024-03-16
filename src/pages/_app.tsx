@@ -10,7 +10,7 @@ import { AudioProvider } from '@/libs/AudioContext';
 import { ErrorProvider } from "@/libs/ErrorContext";
 import ErrorDisplay from "@/components/ErrorDisplay";
 import { DownloadProvider, useDownload } from "@/libs/DownloadContext";
-import { GeistFont, LineSeedSansTH, InterFont } from "../assets/fonts"
+import { LineSeedSansTH, InterFont } from "../assets/fonts"
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -18,7 +18,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <AudioProvider>
         <DownloadProvider>
           <ErrorDisplay />
-          <div className={`${InterFont.variable} ${LineSeedSansTH.variable} font-sans`}>
+          <div className={`${InterFont.variable} ${LineSeedSansTH.variable} font-sans `}>
             <div className="flex">
               <Sidebar />
               <div className="lg:pl-[318px] min-h-screen flex-1 overflow-x-auto"> {/* Adjust `ml-64` based on the sidebar's width */}

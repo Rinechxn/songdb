@@ -8,9 +8,9 @@ import PlayIcon from './icons/playicon';
 import PauseIcon from './icons/pauseicon';
 import RepeatIcon from './icons/repeaticon';
 import RepeatOneIcon from './icons/repeatoneicon';
-import SkipLeftIcon from './icons/skipleft';
-import SkipRightIcon from './icons/skipright';
-import ShuffleIcon from './icons/shuffleicon';
+// import SkipLeftIcon from './icons/skipleft';
+// import SkipRightIcon from './icons/skipright';
+// import ShuffleIcon from './icons/shuffleicon';
 import WaveFormIcon from "./icons/waveformicon";
 import Hls from 'hls.js';
 

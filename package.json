@@ -1,6 +1,6 @@
 {
   "name": "songdb",
-  "version": "2024.02.23_R2100",
+  "version": "2024.03.16_R1800",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -11,6 +11,7 @@
   "dependencies": {
     "@ducanh2912/next-pwa": "^10.2.5",
     "axios": "^1.6.7",
+    "classnames": "^2.5.1",
     "dotenv": "^16.4.4",
     "framer-motion": "^11.0.5",
     "geist": "^1.2.2",
@@ -20,7 +21,8 @@
     "react-dom": "^18",
     "react-hls-player": "^3.0.7",
     "sass": "^1.71.1",
-    "sharp": "^0.33.2"
+    "sharp": "^0.33.2",
+    "styled-components": "^6.1.8"
   },
   "devDependencies": {
     "@types/node": "^20",

@@ -109,8 +109,7 @@ const CardFile: React.FC<CardFileProps> = ({ data }) => {
                     </div>
 
                 </button>
-
-                <div className='flex md:space-x-3 py-1 border border-t border-x-0 border-b-0 border-white/20 md:border-0 w-full items-center justify-center'>
+                <div className='flex md:hidden py-1 border border-t border-x-0 border-b-0 border-white/20 md:border-0 w-full items-center justify-center'>
                     <div className="px-2 md:px-0 md:hidden flex space-x-2 text-sm items-center justify-between w-full px-">
                         <div className='flex space-x-2 text-[12px]'>
                             <p className='opacity-40'>{formatTime(data.duration)}</p>
@@ -135,8 +134,9 @@ const CardFile: React.FC<CardFileProps> = ({ data }) => {
                             </button>
                         </div>
                     </div>
-
-                    <div className='hidden md:flex space-x-2 items-center'>
+                </div>
+                <div className='hidden md:flex space-x-3 py-1 w-full items-center justify-center'>
+                    <div className='hidden md:flex space-x-2 items-center justify-end w-full px-4'>
                         <div className='flex space-x-2'>
                             <p className='opacity-40'>{formatTime(data.duration)}</p>
                             <p>{bytesToSize(data.size)}</p>
